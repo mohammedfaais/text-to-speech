@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body{
+	background-color: #ffffff;
+	margin: 0;
+}
+
+.container{
+	text-align: center;
+	margin:auto;
+	padding: 20px;
+}
+
+.container h3{
+	color: #333333;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.container h2{
+	color: #003399;
+	font-weight: bold;
+}
+
+
+.container h1{
+	color: #003399;
+	font-weight: bold;
+}
+
+.text-box textarea{
+	border: 1px #dadada solid;
+	border-radius: 4px;
+	font-size: 18px;
+    padding: 5px;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.text-box select{
+	background-color:#cc3333;
+	border-radius: 0;
+	color: #fff;
+	font-size: 12px;
+	height: 30px;
+	width: 100%;
+}
+
+
+.wrapper{
+	position: relative;
+	right: 1%;
+	background: #fff;
+	padding: 30px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+
+}
+
+.wrapper .text-box{
+	height: 40px;
+	width: 50%;
+	position:relative;
+}
+.button{
+	cursor: pointer;
+	background-color: #cc3333;
+	color: #fff;
+	font-size: 16px;
+	border:0;
+	border-radius: 4px;
+	padding: 8px;
+	margin-top: 15px;
+
+}
+
+main{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	padding: 8px;
+	grid-gap: 10px;
+}
+
+.box{
+	box-shadow: 0 2px 10px rgba(0,0,0,2);
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	transition: box-shadow 0.2s ease-out;
+
+}
+
+.box.active{
+	box-shadow: 0 0 10px 5px green;
+}
+
+.box .info{
+	background-color: #336656;
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin:0;
+	padding: 10px;
+	text-align: center;
+}
+
+
+@media (max-width: 760px){
+	main{
+		 grid-template-columns: repeat(1,1fr);
+	}
+}
+
+
+
+
